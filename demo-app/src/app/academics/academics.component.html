@@ -1,0 +1,21 @@
+<h1>academics bhot kharab</h1>
+<ul>
+    <li *ngFor="let exam of EXAM">
+        <table border = "1">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>COURSE</th>
+            
+          </tr>
+        <tr>
+
+        <td><span class="name">{{exam.date}}</span><br></td>
+        
+        <td> <span class="name">{{exam.course}}</span><br></td>
+        <td> <span class="name">{{exam.timing}}</span><br></td>
+        
+    </tr>
+    </table>
+    </li>
+</ul>

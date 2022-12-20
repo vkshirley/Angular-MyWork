@@ -1,0 +1,34 @@
+<h1>admissions nhi milega!</h1>
+<p 
+[id]="sayHelloId"
+[style.color]="fontColor">
+Hello you can change color 
+</p>
+
+<button type="button" (click)="changeMyColor()" onclick="this.disabled=true">color change krlo</button>
+
+<button type="button" (click)="popUp()" onclick="this.disabled=true">hidden link</button>
+<a *ngIf="canClick" routerLink="/welcome" target="_blank">Home page in new Window</a>
+<!-- <button type="button" (click)="newW()">NewW</button> -->
+
+
+<ul>
+    <li *ngFor="let student of STUDENTS">
+        <table border = "1">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>COMPANY</th>
+            <th>EMAIL</th>
+          </tr>
+        <tr>
+
+        <td><span class="name">{{student.id}}</span><br></td>
+        
+        <td> <span class="name">{{student.name}}</span><br></td>
+        <td> <span class="name">{{student.course}}</span><br></td>
+        <td><span class="name">{{student.email}} </span></td>
+    </tr>
+    </table>
+    </li>
+</ul>
